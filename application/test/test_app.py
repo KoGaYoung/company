@@ -1,13 +1,11 @@
 import pytest
 import json
-from fastapi import FastAPI
-# from app import main
-import main
+from application import main
 
 #fixture란 테스팅을 하는데 있어서 필요한 부분들을 혹은 조건들을 미리 준비해놓은 리소스 혹은 코드들
 @pytest.fixture
 def api():
-    return main.test_client()
+    return main.app()
 
 
 def test_company_name_autocomplete(api):
