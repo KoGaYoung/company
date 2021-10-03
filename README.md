@@ -1,7 +1,7 @@
 # company
 fastapi project
 
-
+-----
 # 1. Framework 선택
 ## Flask vs Fastapi
 ## 1.1. Flask
@@ -31,6 +31,8 @@ fastapi project
 ## -> 구현은 플라스크가 쉬워보이지만 트랜드에 맞춰 FastAPI 사용해보려고함
 ### 선택에 참고한 글 https://jybaek.tistory.com/890
 
+-----
+
 # 2. 기본 개발환경 구축
 ## 2.1기존에 작업하던 암호화모듈때문에 파이썬 인터프리터에 명령어가 안깔림
 ### 파이썬 설치 경로 강체 세팅
@@ -48,6 +50,8 @@ pip3 config set global.target /Users/kogayoung/company/lib/python3.7/site-packag
 ### * 127.0.0.1:8000/docs 접속
 ### 127.0.0.1:8000/redoc 접속
 ~~~
+
+-----
 
 # 3. Git 연동
 ## 3.1. 새 레파지토리 만들기
@@ -72,4 +76,24 @@ git push origin master
 ## 3.3. Git ignore 생성
 ~~~
 https://www.toptal.com/developers/gitignore
+~~~
+
+-----
+# 4. 문제파악
+## 4.1. pytest이해
+~~~
+https://binux.tistory.com/47
+~~~
+
+## 4.2. Fastapi 공식문서 
+~~~ 
+https://fastapi.tiangolo.com/ko/
+~~~
+
+## 4.3. ORM 연결 
+~~~
+ * Mssql
+https://dingrr.com/blog/post/python-fastapi-%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%99%94-mysql-%EC%97%B0%EA%B2%B0
+ * postgreSQL
+https://blog.neonkid.xyz/253
 ~~~
