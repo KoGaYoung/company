@@ -1,5 +1,12 @@
 # company
 fastapi project
+---
+작업진행률(50%), 예상잔여공수시간(12시간)
+# 남은 작업
+~~~
+-- 로컬 DB연결 연결 후(이슈많음) create_company_schema 실행
+-- test_app 돌아가도록 app api 추가
+~~~
 
 -----
 # 1. Framework 선택
@@ -90,10 +97,32 @@ https://binux.tistory.com/47
 https://fastapi.tiangolo.com/ko/
 ~~~
 
-## 4.3. ORM 연결 
+## 4.3. ORM 연결 -> 오류
 ~~~
  * Mssql
 https://dingrr.com/blog/post/python-fastapi-%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%99%94-mysql-%EC%97%B0%EA%B2%B0
  * postgreSQL
 https://blog.neonkid.xyz/253
 ~~~
+
+## 4.4. 소스 구조 정립
+~~~
+https://dingrr.com/blog/post/python-fastapi-%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%99%94-mysql-%EC%97%B0%EA%B2%B0
+~~~
+
+# 5. 테이블 스키마 추가
+## 5.1.테이블 스키마 구조
+~~~
+* 설계한 스키마구조
+상호명 변경가능하기에 year컬럼추가
+tag 별도의 스키마로 분리를 원했으나,
+
+시간관계상 pk index추가하여 바로 작업
+~~~ 
+## 5.2insert 문작성
+### colab에서 pandas로 돌릴까 했지만 시간관계상 스프레드시트로 작성
+~~~
+https://docs.google.com/spreadsheets/d/1QR8whYn0nh6om-wU0bdD3nQv5EynHMboMC-N2HVqAHw/edit?usp=sharing
+~~~
+
+
